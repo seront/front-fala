@@ -1,0 +1,46 @@
+.landing-main {
+    background: url(/assets/images/bg-landing.jpg) no-repeat transparent;
+    background-size: 125%;
+    padding: 9.5rem 1rem 0;
+    height: 100%;
+    .title {
+        color: #dddddd;
+        font-weight: 300;
+        text-transform: capitalize;
+        text-align: right;
+        font-size: 1.3rem;
+        strong {
+          color: #ffffff;
+          text-transform: none;
+          font-weight: 400;
+        }
+      }
+}
+
+@media (min-width: 1200px) {
+  .landing-page {
+    background-size: 100%;
+    padding: 3.5rem 4rem 0;
+
+    .title {
+      text-align: left;
+      font-size: 2.25rem;
+    }
+
+    aside {
+      display: block;
+    }
+
+    .content {
+      width: 50%;
+      float: right;
+      margin-top: -1rem;
+    }
+
+    .application-form {
+      padding: 3rem 6rem 2rem;
+      margin: 0 0 1rem;
+      max-width: 30rem;
+    }
+  }
+}
