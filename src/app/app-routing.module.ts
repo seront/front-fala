@@ -1,16 +1,17 @@
 import { NgModule } from '@angular/core';
 import { Routes, RouterModule } from '@angular/router';
-import { LandingComponent } from './pages/landing/landing.component';
-import { RentaComponent } from './pages/renta/renta.component';
-
 
 const routes: Routes = [{
   path: '',
-  component: LandingComponent
+  loadChildren: () => import('./pages/landing/landing.module').then(m => m.LandingModule)
 },
 {
   path: 'renta',
-  component: RentaComponent
+  loadChildren: () => import('./pages/renta/renta.module').then(m => m.RentaModule)
+},
+{
+  path: '**',
+  redirectTo: '',
 }];
 
 @NgModule({
