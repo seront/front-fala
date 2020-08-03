@@ -9,9 +9,6 @@ import { Router } from '@angular/router';
 })
 export class RentaComponent implements OnInit {
 
-  valid = false;
-  renta;
-
   constructor(private conection: ConectionService,
               private router: Router) { }
 
@@ -21,16 +18,6 @@ export class RentaComponent implements OnInit {
       console.log('Salir a la principal');
       this.router.navigate(['']);
     }
-  }
-
-  check() {
-    if (this.renta !== undefined && this.renta !== '') {
-      this.valid = true;
-    }
-  }
-
-  async continuar() {
-    const response = await this.conection.sendRequest(this.renta);
   }
 
 }

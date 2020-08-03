@@ -29,10 +29,10 @@ export class ConectionService {
     }
   }
 
-  sendRequest(renta): Promise<any> {
+  async sendRequest(renta): Promise<any> {
     const data = {
       rut: this.rut,
-      phone: this.celular,
+      celular: this.celular,
       email: this.email,
       renta,
     };
