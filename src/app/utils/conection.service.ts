@@ -10,7 +10,6 @@ export class ConectionService {
   celular: any;
   email: any;
   renta: any;
-  valid: any;
 
   constructor(private http: HttpClient) { }
 
@@ -38,6 +37,6 @@ export class ConectionService {
       renta,
     };
     console.log('sendRequest', data);
-    return this.http.post(`${environment.apiEndpoint}/applications`, data).toPromise();
+    return this.http.post(`${environment.apiEndpoint}/validaSolicitud`, data).toPromise();
   }
 }
