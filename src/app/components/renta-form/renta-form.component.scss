@@ -17,6 +17,10 @@
   margin-bottom: 15px;
 }
 
+.form-title-strong {
+  color: #47803A;
+}
+
 @media (min-width: 1200px) {
   .renta-form {
     background-color: white;
@@ -35,5 +39,9 @@
 
   .form-subtitle {
     margin-bottom: 15px;
+  }
+
+  .form-title-strong {
+    color: #47803A;
   }
 }

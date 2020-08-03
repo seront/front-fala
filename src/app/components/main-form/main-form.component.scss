@@ -9,6 +9,10 @@
   color: #73777B;
 }
 
+.form-title-strong {
+  color: #47803A; font-weight: 400;
+}
+
 .form-title {
   font-size: 1.3rem;
 }
@@ -28,5 +32,9 @@
 
   .form-title {
     font-size: 1.3rem;
+  }
+
+  .form-title-strong {
+    color: #47803A; font-weight: 400;
   }
 }
