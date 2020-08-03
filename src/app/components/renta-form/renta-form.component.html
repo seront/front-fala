@@ -27,12 +27,13 @@
                   <span aria-hidden="true">&times;</span>
                 </button>
               </div>
-            <button type="button" class="btn w-100"
+            <!-- <button type="button" class="btn w-100"
             [ngClass]="{'btn-success': valid, 'btn-secondary': !valid}" 
             [disabled]="!valid"
             (click)="continuar()">
                 CONTINUAR
-            </button>
+            </button> -->
+            <app-form-button class="w-100" [valid]="valid" (continuar)="continuar()"></app-form-button>
         </div>
     </div>
 </div>

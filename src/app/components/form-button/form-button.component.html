@@ -1,0 +1,6 @@
+<button type="button" class="btn w-100"
+            [ngClass]="{'btn-success': valid, 'btn-secondary': !valid}" 
+            [disabled]="!valid"
+            (click)="onClick()">
+                CONTINUAR
+            </button>

@@ -55,7 +55,7 @@ export class BrowserInterceptor implements HttpInterceptor {
         return 'MacOS';
     } else if (navigator.appVersion.indexOf('X11') !== -1) {
         return 'UNIX OS';
-    } else if (navigator.appVersion.indexOf('Linux') !== -1){
+    } else if (navigator.appVersion.indexOf('Linux') !== -1) {
         return 'Linux OS';
     }
   }
