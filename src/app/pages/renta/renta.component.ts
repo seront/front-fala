@@ -15,7 +15,6 @@ export class RentaComponent implements OnInit {
   ngOnInit() {
     if (!this.conection.checkStatus()) {
       // Regresar a la pagina inicial
-      console.log('Salir a la principal');
       this.router.navigate(['']);
     }
   }

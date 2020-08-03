@@ -34,7 +34,6 @@ export class RentaFormComponent implements OnInit {
       const response = await this.conection.sendRequest(this.renta);
       this.exito();
     } catch {
-      console.log('Error al guardar la solicitud');
       this.mostrarError();
     }
   }
@@ -46,7 +45,7 @@ export class RentaFormComponent implements OnInit {
     this.showAlert = true;
     this.sleep(3000).then(() => {
       this.showAlert = false;
-      this.router.navigate(['']);
+      this.valid = true;
     });
   }
 
@@ -57,7 +56,7 @@ export class RentaFormComponent implements OnInit {
     this.showAlert = true;
     this.sleep(3000).then(() => {
       this.showAlert = false;
-      // this.router.navigate(['']);
+      this.router.navigate(['']);
     });
   }
 
