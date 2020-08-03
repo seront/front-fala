@@ -32,12 +32,6 @@
                 </div>
             </div>
             <div class="row">
-                <!-- <button type="button" class="btn w-100"
-                    [ngClass]="{'btn-success': form.valid, 'btn-secondary': !form.valid}" 
-                    [disabled]="!form.valid"
-                    (click)="continuar()">
-                    CONTINUAR
-                </button> -->
                 <app-form-button class="w-100" [valid]="form.valid" (continuar)="continuar()"></app-form-button>
             </div>
         </div>
