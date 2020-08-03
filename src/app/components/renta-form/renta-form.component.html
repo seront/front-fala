@@ -11,12 +11,22 @@
         </div>
         <div class="row">
             <div class="form-group w-100 my-2">
-                <label for="exampleInputEmail1">¿Cuál es tu renta líquida/ingreso mensual?</label>
-                <input type="text" class="form-control" id="" placeholder="Ej: $400.000">
+                <label for="renta">¿Cuál es tu renta líquida/ingreso mensual?</label>
+                <input type="number"
+                class="form-control"
+                id="renta"
+                placeholder="Ej: $400.000"
+                [ngModel]="renta"
+                (ngModelChange)="check()">
             </div>
         </div>
         <div class="row my-4">
-            <button type="button" class="btn btn-success w-100">CONTINUAR</button>
+            <button type="button" class="btn w-100"
+            [ngClass]="{'btn-success': valid, 'btn-secondary': !valid}" 
+            [disabled]="!valid"
+            (click)="continuar()">
+                CONTINUAR
+            </button>
         </div>
     </div>
 </div>

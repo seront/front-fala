@@ -1,0 +1,43 @@
+import { Injectable } from '@angular/core';
+import { HttpClient } from '@angular/common/http';
+import { environment } from 'src/environments/environment';
+
+@Injectable({
+  providedIn: 'root'
+})
+export class ConectionService {
+  rut: any;
+  celular: any;
+  email: any;
+  renta: any;
+  valid: any;
+
+  constructor(private http: HttpClient) { }
+
+  set3Params(rut, celular, email) {
+    this.rut = rut;
+    this.celular = celular;
+    this.email = email;
+  }
+  setRenta(renta) {
+    this.renta = renta;
+  }
+  checkStatus(): boolean {
+    if (this.rut && this.celular && this.email) {
+      return true;
+    } else {
+      return false;
+    }
+  }
+
+  sendRequest(renta): Promise<any> {
+    const data = {
+      rut: this.rut,
+      phone: this.celular,
+      email: this.email,
+      renta,
+    };
+    console.log('sendRequest', data);
+    return this.http.post(`${environment.apiEndpoint}/applications`, data).toPromise();
+  }
+}
