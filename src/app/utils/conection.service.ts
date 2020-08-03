@@ -13,7 +13,7 @@ export class ConectionService {
 
   constructor(private http: HttpClient) { }
 
-  set3Params(rut, celular, email) {
+  setParams(rut, celular, email) {
     this.rut = rut;
     this.celular = celular;
     this.email = email;

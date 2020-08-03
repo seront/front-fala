@@ -1,32 +1,32 @@
 .main-form {
-    background-color: white;   
-    padding: 3rem 3rem 2rem;
-    max-width: 30rem;
-    font-size: 1rem;
+  background-color: white;
+  padding: 2rem 3rem 2rem;
+  max-width: 30rem;
+  font-size: 1rem;
+  -webkit-box-shadow: 3px 4px 5px 0px rgba(148, 146, 148, 0.63);
+  -moz-box-shadow: 3px 4px 5px 0px rgba(148, 146, 148, 0.63);
+  box-shadow: 3px 4px 5px 0px rgba(148, 146, 148, 0.63);
+  color: #73777B;
 }
 
 .form-title {
-    font-size: 1.3rem;
-}
-
-.form-subtitle {
-    margin-bottom: 15px;
+  font-size: 1.3rem;
 }
 
 @media (min-width: 1200px) {
-.main-form {
-    background-color: white;   
-    padding: 3rem 6rem 2rem;
+  .main-form {
+    background-color: white;
+    padding: 2rem 3rem 2rem;
     max-width: 30rem;
     margin: 0px;
     font-size: 1rem;
-}
+    -webkit-box-shadow: 3px 4px 5px 0px rgba(148, 146, 148, 0.63);
+    -moz-box-shadow: 3px 4px 5px 0px rgba(148, 146, 148, 0.63);
+    box-shadow: 3px 4px 5px 0px rgba(148, 146, 148, 0.63);
+    color: #73777B;
+  }
 
-.form-title {
+  .form-title {
     font-size: 1.3rem;
-}
-
-.form-subtitle {
-    margin-bottom: 15px;
-}
+  }
 }

@@ -1,31 +1,39 @@
 .renta-form {
-    background-color: white;   
-    padding: 2rem 2rem 2rem;
-    max-width: 20rem;
-    font-size: 1rem;
+  background-color: white;
+  padding: 2rem 2rem 2rem;
+  max-width: 20rem;
+  font-size: 1rem;
+  -webkit-box-shadow: 3px 4px 5px 0px rgba(148, 146, 148, 0.63);
+  -moz-box-shadow: 3px 4px 5px 0px rgba(148, 146, 148, 0.63);
+  box-shadow: 3px 4px 5px 0px rgba(148, 146, 148, 0.63);
+  color: #73777B;
 }
 
 .form-title {
-    font-size: 1.3rem;
+  font-size: 1.3rem;
 }
 
 .form-subtitle {
-    margin-bottom: 15px;
+  margin-bottom: 15px;
 }
 
 @media (min-width: 1200px) {
-.renta-form {
-    background-color: white;   
+  .renta-form {
+    background-color: white;
     padding: 2rem 2rem 2rem;
     max-width: 20rem;
     font-size: 1rem;
-}
+    -webkit-box-shadow: 3px 4px 5px 0px rgba(148, 146, 148, 0.63);
+    -moz-box-shadow: 3px 4px 5px 0px rgba(148, 146, 148, 0.63);
+    box-shadow: 3px 4px 5px 0px rgba(148, 146, 148, 0.63);
+    color: #73777B;
+  }
 
-.form-title {
+  .form-title {
     font-size: 1.3rem;
-}
+  }
 
-.form-subtitle {
+  .form-subtitle {
     margin-bottom: 15px;
-}
+  }
 }

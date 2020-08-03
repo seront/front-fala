@@ -57,7 +57,7 @@ export class RentaFormComponent implements OnInit {
     this.showAlert = true;
     this.sleep(3000).then(() => {
       this.showAlert = false;
-      this.router.navigate(['']);
+      // this.router.navigate(['']);
     });
   }
 

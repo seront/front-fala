@@ -2,7 +2,7 @@
     background: url(/assets/images/bg-landing.jpg) no-repeat transparent;
     background-size: 100%;
     padding: 3.5rem 1rem 0;
-    height: 655px;
+    //height: 90vh;
 }
 .barra {
     display: none;
@@ -12,10 +12,8 @@
 }
 .title {
     color: #ffffff;
-    font-weight: 300;
-    text-transform: capitalize;
     text-align: right;
-    font-size: 1.3rem;
+    font-size: 1.7rem;
 
     strong {
       color: #ffffff;
@@ -24,24 +22,19 @@
     }
   }
 
-@media(max-width: 960px){
-
-}
-
 @media (min-width: 1200px) {
   .landing-main {
     background: url(/assets/images/bg-landing.jpg) no-repeat transparent;
     background-size: 100%;
-    padding: 3.5rem 4rem 0;
-    height: 655px;
+    padding: 2.5rem 4rem 0;
+    // height: 90vh;
   }
 
   .title {
     color: #ffffff;
     font-weight: 300;
-    text-transform: capitalize;
     text-align: left;
-    font-size: 1.3rem;
+    font-size: 1.7rem;
 
     strong {
       color: #ffffff;
@@ -68,6 +61,7 @@
     display: flex;
     align-items: center;
     font-size: 0.75rem;
+    color: #73777B;
   }
 
   .logo {

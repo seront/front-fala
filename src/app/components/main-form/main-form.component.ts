@@ -25,7 +25,7 @@ export class MainFormComponent implements OnInit {
   continuar() {
     const { rut, celular, email } = this.form.getRawValue();
     console.log(this.form.valid, rut, celular, email);
-    this.conection.set3Params(rut, celular, email);
+    this.conection.setParams(rut, celular, email);
     this.router.navigate(['renta']);
   }
 
